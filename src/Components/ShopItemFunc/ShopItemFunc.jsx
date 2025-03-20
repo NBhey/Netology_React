@@ -1,11 +1,9 @@
-function ShopItemFunc(prop) {
-    prop = prop.prop
-    
+function ShopItemFunc({brand, title, prop}) {  
   return (
     <>
       <div className="main-content">
-        <h2>{prop.brand}</h2>
-        <h1>{prop.title}</h1>
+        <h2>{brand}</h2>
+        <h1>{title}</h1>
         <h3>{prop.description}</h3>
         <div className="description">{prop.descriptionFull}</div>
         <div className="highlight-window mobile">
